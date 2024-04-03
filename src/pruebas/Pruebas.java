@@ -26,7 +26,7 @@ public class Pruebas {
 	@Test
 	public void retirarTest(){
 		assertTrue(this.cuenta.retirar(3000));
-		assertFalse(this.cuenta.retirar(11000));
+		assertthrows(Exception.class, ()->{ this.cuenta.retirar(11000);});
 	}
 
 
